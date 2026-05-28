@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DMT Research · 舞蹈治療文獻日報 · 2026年5月29日</title>
+<meta name="description" content="2026年5月29日 舞蹈治療/動態治療文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:#fffdf8;--shadow:0 2px 12px rgba(139,79,43,.07)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Noto Sans TC','PingFang TC','Helvetica Neue',Arial,sans-serif;min-height:100vh;overflow-x:hidden;line-height:1.7}
+.container{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+header{text-align:center;margin-bottom:40px;padding:36px 24px 28px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.logo{font-size:52px;margin-bottom:8px}
+h1{font-family:'Crimson Pro','Noto Sans TC',serif;font-size:28px;font-weight:700;color:var(--accent);letter-spacing:.5px;margin-bottom:4px}
+.subtitle{font-size:15px;color:var(--muted);font-weight:400}
+.date-badge{display:inline-block;margin-top:10px;padding:4px 16px;background:var(--accent);color:#fff;border-radius:20px;font-size:13px;font-weight:500}
+.summary-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:36px;box-shadow:var(--shadow)}
+.summary-card h2{font-size:16px;color:var(--accent);margin-bottom:8px;font-weight:600}
+.summary-card p{font-size:15px;color:var(--text);line-height:1.8}
+.section-title{font-size:18px;font-weight:700;color:var(--accent);margin:36px 0 16px;display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';display:inline-block;width:4px;height:20px;background:var(--accent);border-radius:2px}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,79,43,.12)}
+.news-card.featured{border-left:4px solid var(--accent)}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent);color:#fff;border-radius:50%;font-size:13px;font-weight:700}
+.emoji-icon{font-size:22px}
+.utility-high{color:#1a7a3a;font-weight:600;font-size:13px;background:#e8f5e9;padding:2px 10px;border-radius:10px}
+.utility-mid{color:#8c6d1f;font-weight:600;font-size:13px;background:#fff8e1;padding:2px 10px;border-radius:10px}
+.utility-low{color:#999;font-weight:600;font-size:13px;background:#f5f5f5;padding:2px 10px;border-radius:10px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:18px}
+.utility-sm{font-size:12px}
+h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;line-height:1.5}
+.journal-source{font-size:13px;color:var(--muted);margin-bottom:8px}
+.utility-reason{font-size:13px;color:var(--muted);font-style:italic;margin-top:6px}
+.card-footer{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.tag{display:inline-block;padding:2px 10px;background:var(--accent-soft);color:var(--accent);border-radius:10px;font-size:12px;font-weight:500}
+.card-footer a{margin-left:auto;font-size:13px;color:var(--accent);text-decoration:none;font-weight:500}
+.card-footer a:hover{text-decoration:underline}
+.keywords-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.keywords-section h2{font-size:16px;color:var(--accent);margin-bottom:12px}
+.keyword{display:inline-block;padding:4px 14px;margin:3px;border:1px solid var(--line);border-radius:16px;font-size:13px;color:var(--muted);background:var(--bg)}
+.topic-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.topic-section h2{font-size:16px;color:var(--accent);margin-bottom:14px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{min-width:100px;font-size:13px;color:var(--text);text-align:right}
+.topic-bar-bg{flex:1;height:16px;background:var(--bg);border-radius:8px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-soft));border-radius:8px;transition:width .3s}
+.topic-count{min-width:24px;font-size:13px;color:var(--muted);font-weight:600}
+.clinic-banner{margin:40px 0 20px;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;text-align:center}
+.clinic-links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.clinic-link{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:14px;font-weight:500;transition:background .2s,transform .15s}
+.clinic-link:hover{background:#a3613a;transform:translateY(-1px)}
+.coffee-link{background:#ff813f}
+.coffee-link:hover{background:#e0703a}
+.clinic-icon{font-size:18px}
+footer{text-align:center;padding:32px 0 0;border-top:1px solid var(--line);margin-top:40px;color:var(--muted);font-size:13px}
+footer a{color:var(--accent);text-decoration:none}
+.empty-msg{text-align:center;padding:48px 24px;color:var(--muted);font-size:15px}
+@media(max-width:640px){
+  .container{padding:16px 12px 40px}
+  header{padding:24px 16px 20px}
+  h1{font-size:22px}
+  .news-card{padding:16px}
+  .clinic-links{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💃</div>
+    <h1>DMT Research Daily</h1>
+    <p class="subtitle">舞蹈治療 / 動態治療文獻日報 · 每日自動更新</p>
+    <span class="date-badge">📅 2026年5月29日</span>
+  </header>
+
+  <div class="summary-card"><h2>📊 今日趨勢摘要</h2><p>今日文獻亮點集中在舞蹈介入的實證效果，涵蓋長期照護老人、帕金森氏症與多發性硬化症等族群，其中《Lancet Psychiatry》發表的重要觀點文章更是首度系統性論述藝術休閒活動與心理治療的共通機制，為舞蹈治療的理論基礎帶來突破性視角。</p></div>
+
+  <div class="section-title">🏆 今日精選 TOP 5</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>藝術為基礎的休閒活動與心理治療之間的內在共通性</h3>
+          <p class="journal-source">The Lancet Psychiatry · Inherent commonalities between arts-based leisure activities and psychological therapies.</p>
+          <p>本文由Fancourt、Karkou與Fonagy等頂尖學者共同撰寫，系統性論述藝術休閒活動（含舞蹈）如何透過跨診斷的認知、情緒、社會與行為機制產生心理治療效果，並釐清其與創意藝術治療的重疊與差異，為將藝術活動納入心理健康照護路徑提供重要理論基礎。</p>
+          <p class="utility-reason">💡 為治療師向醫療體系倡議舞蹈治療提供頂級期刊的理論背書，有助於跨專業溝通與轉介合作。</p>
+          <div class="card-footer">
+            <span class="tag">創意藝術治療</span><span class="tag">身心醫學</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42202844/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">👴</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>舞蹈介入對長期照護機構老年人生活品質的效果：系統性文獻回顧</h3>
+          <p class="journal-source">Canadian Journal on Aging · The Effectiveness of Dance Interventions on the Quality of Life of Older Adults Residing in Long-Term Care Facilities: A Systematic Review.</p>
+          <p>本系統性回顧納入7項研究共429名長期照護機構老人，發現六項研究顯示舞蹈介入能顯著改善生活品質，且多數介入針對特定文化群體設計，強調文化適配性在舞蹈治療中的重要性。</p>
+          <p class="utility-reason">💡 直接提供長照機構導入舞蹈治療的實證基礎，且由病患夥伴共同主導研究，符合當前以人為中心的照護趨勢。</p>
+          <div class="card-footer">
+            <span class="tag">舞蹈治療</span><span class="tag">老年人</span><span class="tag">社區健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41906678/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">💃</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>排舞對多發性硬化症患者的治療效果：評估者盲化的隨機對照試驗</h3>
+          <p class="journal-source">Arts &amp; Health · Therapeutic effects of line dancing in people with multiple sclerosis: an evaluator-blinded, randomized controlled study.</p>
+          <p>此評估者盲化RCT研究發現，排舞介入不僅顯著改善多發性硬化症患者的平衡功能，更在焦慮狀態與心理健康生活品質面向優於對照組，支持將排舞作為MS患者的輔助治療選項。</p>
+          <p class="utility-reason">💡 提供高品質RCT證據，明確展示舞蹈介入同時改善身體功能與心理狀態的雙重效益，適合用於神經復健團隊的跨專業討論。</p>
+          <div class="card-footer">
+            <span class="tag">舞蹈治療</span><span class="tag">復健醫學</span><span class="tag">焦慮症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38466080/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🤝</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>與帕金森氏症共舞：對生活品質與社會情緒體驗的影響</h3>
+          <p class="journal-source">Journal of Dance Medicine &amp; Science · Dancing Through Parkinson's: Impacts on Quality of Life and Socioemotional Experiences.</p>
+          <p>此現象學質性研究透過20場深度訪談，揭示帕金森氏症患者將舞蹈視為提升自尊、帶來喜悅並促進社會互動的治療性活動，強調舞蹈在身體、社會與情緒三個維度的正向影響。</p>
+          <p class="utility-reason">💡 深入呈現患者的內在體驗，有助於治療師理解舞蹈對帕金森氏症患者的意義建構過程，豐富臨床同理與介入設計。</p>
+          <div class="card-footer">
+            <span class="tag">舞蹈治療</span><span class="tag">帕金森氏症</span><span class="tag">社會連結</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40156453/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">👧</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>舞蹈計畫對學齡前兒童基本動作技能的影響：系統性文獻回顧與統合分析</h3>
+          <p class="journal-source">Journal of Dance Medicine &amp; Science · Effects of Dance Programs on Fundamental Motor Skills in Preschool Children: A Systematic Review and Meta-Analysis.</p>
+          <p>本系統性回顧與統合分析納入11項研究，證實舞蹈計畫能顯著促進學齡前兒童的整體動作技能發展，尤其在身體協調與靜態平衡方面效果明確，支持將舞蹈納入幼兒園課程。</p>
+          <p class="utility-reason">💡 為早期兒童發展介入提供實證支持，適合兒童職能治療與物理治療師在設計動作介入時參考。</p>
+          <div class="card-footer">
+            <span class="tag">兒童青少年</span><span class="tag">運動科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40219825/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+
+  <div class="section-title">📋 所有文獻（共 27 篇）</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐭</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>動物模型能否代表臨床帕金森氏症的多樣性？</h3>
+          <p class="journal-source">Current Opinion in Neurobiology</p>
+          <p>回顧現有帕金森氏症動物模型的優缺點，探討其重現臨床複雜症狀的能力。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42191412/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>闌尾外低級別黏液性腫瘤樣病變：臨床病理與分子特徵</h3>
+          <p class="journal-source">Histopathology</p>
+          <p>描述三例發生於重複囊腫的闌尾外LAMN樣病變，具有與傳統闌尾LAMN相同的形態與分子特徵。</p>
+          <div class="card-footer">
+            <span class="tag">癌症照護</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42187007/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3> Cannabidiol用於發育性與癲癇性腦病：依症候群與年齡分層的系統性回顧與統合分析</h3>
+          <p class="journal-source">CNS Drugs</p>
+          <p>分析藥用級CBD在不同DEE症候群中的癲癇控制效果與安全性，發現整體50%反應率約50%。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42185726/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👁️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>客製化鈦合金與氧化鋯植體於眼眶骨折重建的準確度比較：隨機臨床試驗</h3>
+          <p class="journal-source">The Journal of Craniofacial Surgery</p>
+          <p>比較客製化鈦合金與氧化鋯植體於眼眶重建的效果，兩者重建準確度相當，氧化鋯成本較低。</p>
+          <div class="card-footer">
+            <span class="tag">復健醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42183622/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚕️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>德國血管外科醫學會品質登錄中女性患者接受主動脈血管內修補術後的劣勢證據</h3>
+          <p class="journal-source">European Journal of Vascular and Endovascular Surgery</p>
+          <p>分析德國登錄資料發現女性接受EVAR後的住院死亡率與失敗救援率顯著高於男性。</p>
+          <div class="card-footer">
+            <span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42178106/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🛡️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>服務創傷族群的心理衛生專業人員之次級創傷壓力介入措施：系統性文獻回顧</h3>
+          <p class="journal-source">BMC Psychology</p>
+          <p>回顧針對心理衛生專業人員次級創傷壓力的介入措施，發現自我效能訓練、情緒導向訓練等皆能有效降低STS症狀。</p>
+          <div class="card-footer">
+            <span class="tag">創傷/PTSD</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42174636/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👀</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>兒童視覺障礙趨勢：Alder Hey兒童醫院十年回顧性研究之見解</h3>
+          <p class="journal-source">Eye (London, England)</p>
+          <p>分析十年間兒童視覺障礙登記趨勢，發現登記人數增加50%，大腦性視覺障礙成為主要成因。</p>
+          <div class="card-footer">
+            <span class="tag">兒童青少年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42174149/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫀</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>基於解剖學引導的時空親和力學習用於心臟超音波分割的無監督域適應</h3>
+          <p class="journal-source">IEEE Journal of Biomedical and Health Informatics</p>
+          <p>提出解剖學引導的時空親和力框架，解決心臟超音波跨設備域適應的挑戰。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42166259/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💓</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>利用工程化心臟組織模擬遺傳性長QT症候群的室性心搏過速</h3>
+          <p class="journal-source">Bioactive Materials</p>
+          <p>建立完全由hiPSC衍生的人類心臟組織平台，成功重現基因型特異性的室性心搏過速。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42164997/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>植物固醇24(S)-saringosterol以細胞特異方式改變脂質恆定與發炎路徑</h3>
+          <p class="journal-source">Biomedicine &amp; Pharmacotherapy</p>
+          <p>發現24(S)-saringosterol作為選擇性LXR致效劑，在骨髓細胞保留抗發炎效果的同時降低肝臟副作用風險。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42107911/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🏥</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>護理之家住民接種單價KP.2 SARS-CoV-2疫苗後的臨床保護持續性</h3>
+          <p class="journal-source">Journal of the American Medical Directors Association</p>
+          <p>評估KP.2疫苗對護理之家住民的保護效果，發現對住院或死亡的保護力在第12週為77%但於第18週下降至53%。</p>
+          <div class="card-footer">
+            <span class="tag">老年人</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42036100/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📋</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>基於人體模型解剖學的性別指定</h3>
+          <p class="journal-source">The Clinical Teacher</p>
+          <p>探討醫學技能訓練中對骨盆人體模型使用性別化語言的問題，倡議改用解剖學術語以避免順性別規範。</p>
+          <div class="card-footer">
+            <span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42012188/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧩</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>復發緩解型多發性硬化症中腦部連接組終生重組</h3>
+          <p class="journal-source">European Journal of Radiology</p>
+          <p>利用常模模型分析發現RRMS患者的小世界特性呈現二次趨勢，且網路變化可能導致疲勞症狀。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41990686/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>早發型額顳葉失智症診斷前之認知症狀：範圍性文獻回顧</h3>
+          <p class="journal-source">Canadian Journal on Aging</p>
+          <p>綜合EO-FTD最早的認知症狀，發現記憶、注意力與執行功能障礙最常被報告，但術語不一致限制臨床應用。</p>
+          <div class="card-footer">
+            <span class="tag">失智症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41958413/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>腦部老化中的膠質細胞動力學：細胞異質性與區域脆弱性</h3>
+          <p class="journal-source">Progress in Neurobiology</p>
+          <p>綜合論述微膠細胞、星狀膠質細胞與寡突膠質細胞在老化過程中的異質性變化及其區域脆弱性模式。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41956196/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>紐西蘭無當地農業黏菌素使用之情況下的移動性黏菌素抗藥性：mcr攜帶質體的基因組見解</h3>
+          <p class="journal-source">International Journal of Antimicrobial Agents</p>
+          <p>分析紐西蘭mcr陽性分離株的質體骨幹，發現其傳播模式與全球趨勢一致，支持以骨幹為基礎的監測方法。</p>
+          <div class="card-footer">
+            <span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41935585/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐒</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>使用stHIV-1sv/G53D在北豬尾獼猴建立進行性HIV-1樣感染模型</h3>
+          <p class="journal-source">Emerging Microbes &amp; Infections</p>
+          <p>成功建立持續病毒血症與漸進性CD4+ T細胞耗竭的HIV-1樣感染模型，重現臨床感染特徵。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41914615/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦴</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>靶向骨質疏鬆骨微環境：加速骨再生之機制見解與治療性生物材料</h3>
+          <p class="journal-source">Bioactive Materials</p>
+          <p>建立以骨微環境功能組件為基礎的生物材料分類框架，將材料設計直接連結至病理機制。</p>
+          <div class="card-footer">
+            <span class="tag">復健醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41853699/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔎</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>睪丸卵黃囊腫瘤PDX模型的建立與特徵描述</h3>
+          <p class="journal-source">Clinical &amp; Translational Oncology</p>
+          <p>成功建立保留原發腫瘤組織結構與蛋白表現特徵的TYST PDX模型，對標準JEB化療具高敏感性。</p>
+          <div class="card-footer">
+            <span class="tag">癌症照護</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41525035/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐱</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>犬類與貓類特異性細小病毒快篩抗原套件在貓泛白血球減少症中的完美診斷一致性</h3>
+          <p class="journal-source">The Veterinary Quarterly</p>
+          <p>發現同一廠商的犬類與貓類細小病毒快篩套件具有近乎完美的一致性，支持以犬類套件靈活用於貓隻診斷。</p>
+          <div class="card-footer">
+            <span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41428358/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐔</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>禽腺病毒血清型1型與4型共感染透過FAdV-1介導的HSPA2表現上升增強FAdV-4複製</h3>
+          <p class="journal-source">Virulence</p>
+          <p>首度發現FAdV-1與FAdV-4共感染時，FAdV-1透過上調HSPA2表現使FAdV-4複製效率提升21倍。</p>
+          <div class="card-footer">
+            <span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41408149/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫁</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>匿名活體捐贈擴展兒童肝臟移植的可及性並促進公平性：回顧性世代研究</h3>
+          <p class="journal-source">Liver Transplantation</p>
+          <p>分析422例兒童肝移植發現匿名活體捐贈主要惠及社經弱勢族群，且長期存活率與定向活體捐贈相當。</p>
+          <div class="card-footer">
+            <span class="tag">兒童青少年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41104559/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+
+  
+
+  <div class="topic-section"><h2>📈 主題分佈</h2>
+            <div class="topic-row">
+              <span class="topic-name">舞蹈治療實證</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:29%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">創意藝術治療理論</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:7%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學基礎研究</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:57%"></div></div>
+              <span class="topic-count">8</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">臨床醫學其他</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">14</span>
+            </div></div>
+
+  <div class="keywords-section"><h2>🏷️ 關鍵字</h2><span class="keyword">舞蹈介入實證</span><span class="keyword">藝術治療理論</span><span class="keyword">長期照護</span><span class="keyword">帕金森氏症</span><span class="keyword">多發性硬化症</span><span class="keyword">跨診斷機制</span><span class="keyword">文化適配性</span></div>
+
+  
+<div class="clinic-banner">
+  <div class="clinic-links">
+    <a href="https://www.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">🏥</span> 李政洋身心診所首頁
+    </a>
+    <a href="https://blog.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">📬</span> 訂閱電子報
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" target="_blank" rel="noopener noreferrer" class="clinic-link coffee-link">
+      <span class="clinic-icon">☕</span> Buy Me a Coffee
+    </a>
+  </div>
+</div>
+
+  <footer>
+    <p>由 <a href="https://open.bigmodel.cn/" target="_blank" rel="noopener noreferrer">Zhipu AI</a> 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
+    <p style="margin-top:4px">© 2026 舞蹈治療文獻日報 · <a href="index.html">返回首頁</a></p>
+  </footer>
+</div>
+</body>
+</html>
