@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DMT Research · 舞蹈治療文獻日報 · 2026年6月20日</title>
+<meta name="description" content="2026年6月20日 舞蹈治療/動態治療文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:#fffdf8;--shadow:0 2px 12px rgba(139,79,43,.07)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Noto Sans TC','PingFang TC','Helvetica Neue',Arial,sans-serif;min-height:100vh;overflow-x:hidden;line-height:1.7}
+.container{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+header{text-align:center;margin-bottom:40px;padding:36px 24px 28px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.logo{font-size:52px;margin-bottom:8px}
+h1{font-family:'Crimson Pro','Noto Sans TC',serif;font-size:28px;font-weight:700;color:var(--accent);letter-spacing:.5px;margin-bottom:4px}
+.subtitle{font-size:15px;color:var(--muted);font-weight:400}
+.date-badge{display:inline-block;margin-top:10px;padding:4px 16px;background:var(--accent);color:#fff;border-radius:20px;font-size:13px;font-weight:500}
+.summary-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:36px;box-shadow:var(--shadow)}
+.summary-card h2{font-size:16px;color:var(--accent);margin-bottom:8px;font-weight:600}
+.summary-card p{font-size:15px;color:var(--text);line-height:1.8}
+.section-title{font-size:18px;font-weight:700;color:var(--accent);margin:36px 0 16px;display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';display:inline-block;width:4px;height:20px;background:var(--accent);border-radius:2px}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,79,43,.12)}
+.news-card.featured{border-left:4px solid var(--accent)}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent);color:#fff;border-radius:50%;font-size:13px;font-weight:700}
+.emoji-icon{font-size:22px}
+.utility-high{color:#1a7a3a;font-weight:600;font-size:13px;background:#e8f5e9;padding:2px 10px;border-radius:10px}
+.utility-mid{color:#8c6d1f;font-weight:600;font-size:13px;background:#fff8e1;padding:2px 10px;border-radius:10px}
+.utility-low{color:#999;font-weight:600;font-size:13px;background:#f5f5f5;padding:2px 10px;border-radius:10px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:18px}
+.utility-sm{font-size:12px}
+h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;line-height:1.5}
+.journal-source{font-size:13px;color:var(--muted);margin-bottom:8px}
+.utility-reason{font-size:13px;color:var(--muted);font-style:italic;margin-top:6px}
+.card-footer{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.tag{display:inline-block;padding:2px 10px;background:var(--accent-soft);color:var(--accent);border-radius:10px;font-size:12px;font-weight:500}
+.card-footer a{margin-left:auto;font-size:13px;color:var(--accent);text-decoration:none;font-weight:500}
+.card-footer a:hover{text-decoration:underline}
+.keywords-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.keywords-section h2{font-size:16px;color:var(--accent);margin-bottom:12px}
+.keyword{display:inline-block;padding:4px 14px;margin:3px;border:1px solid var(--line);border-radius:16px;font-size:13px;color:var(--muted);background:var(--bg)}
+.topic-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.topic-section h2{font-size:16px;color:var(--accent);margin-bottom:14px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{min-width:100px;font-size:13px;color:var(--text);text-align:right}
+.topic-bar-bg{flex:1;height:16px;background:var(--bg);border-radius:8px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-soft));border-radius:8px;transition:width .3s}
+.topic-count{min-width:24px;font-size:13px;color:var(--muted);font-weight:600}
+.clinic-banner{margin:40px 0 20px;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;text-align:center}
+.clinic-links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.clinic-link{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:14px;font-weight:500;transition:background .2s,transform .15s}
+.clinic-link:hover{background:#a3613a;transform:translateY(-1px)}
+.coffee-link{background:#ff813f}
+.coffee-link:hover{background:#e0703a}
+.clinic-icon{font-size:18px}
+footer{text-align:center;padding:32px 0 0;border-top:1px solid var(--line);margin-top:40px;color:var(--muted);font-size:13px}
+footer a{color:var(--accent);text-decoration:none}
+.empty-msg{text-align:center;padding:48px 24px;color:var(--muted);font-size:15px}
+@media(max-width:640px){
+  .container{padding:16px 12px 40px}
+  header{padding:24px 16px 20px}
+  h1{font-size:22px}
+  .news-card{padding:16px}
+  .clinic-links{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💃</div>
+    <h1>DMT Research Daily</h1>
+    <p class="subtitle">舞蹈治療 / 動態治療文獻日報 · 每日自動更新</p>
+    <span class="date-badge">📅 2026年6月20日</span>
+  </header>
+
+  <div class="summary-card"><h2>📊 今日趨勢摘要</h2><p>今日沒有新的舞蹈治療相關文獻。</p></div>
+
+  
+
+  
+
+  <div class="empty-msg">📭 今日尚無新的舞蹈治療相關文獻，明天見！</div>
+
+  
+
+  
+
+  
+<div class="clinic-banner">
+  <div class="clinic-links">
+    <a href="https://www.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">🏥</span> 李政洋身心診所首頁
+    </a>
+    <a href="https://blog.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">📬</span> 訂閱電子報
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" target="_blank" rel="noopener noreferrer" class="clinic-link coffee-link">
+      <span class="clinic-icon">☕</span> Buy Me a Coffee
+    </a>
+  </div>
+</div>
+
+  <footer>
+    <p>由 <a href="https://open.bigmodel.cn/" target="_blank" rel="noopener noreferrer">Zhipu AI</a> 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
+    <p style="margin-top:4px">© 2026 舞蹈治療文獻日報 · <a href="index.html">返回首頁</a></p>
+  </footer>
+</div>
+</body>
+</html>
