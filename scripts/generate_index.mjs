@@ -90,7 +90,7 @@ ${links}  </ul>
     </div>
   </div>
   <footer>
-    <p>由 <a href="https://open.bigmodel.cn/" target="_blank" rel="noopener noreferrer">Zhipu AI</a> 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
+    <p>由 NVIDIA AI 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
     <p style="margin-top:4px">© ${new Date().getFullYear()} 舞蹈治療文獻日報</p>
   </footer>
 </div>

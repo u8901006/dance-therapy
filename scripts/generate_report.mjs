@@ -5,9 +5,9 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { readdirSync } from 'node:fs';
 import { join, basename } from 'node:path';
 
-const API_BASE = process.env.ZHIPU_API_BASE || 'https://open.bigmodel.cn/api/coding/paas/v4';
-const MODELS = ['GLM-5-Turbo', 'GLM-4.7', 'GLM-4.7-Flash'];
-const MAX_TOKENS = 50000;
+const API_BASE = process.env.NVIDIA_API_BASE || 'https://integrate.api.nvidia.com/v1';
+const MODELS = ['nvidia/nemotron-3-super-120b-a12b', 'nvidia/nemotron-3-nano-30b-a3b'];
+const MAX_TOKENS = 16384;
 const REQUEST_TIMEOUT = 480000;
 const SUMMARIZED_PATH = 'data/summarized.json';
 
@@ -146,9 +146,11 @@ async function callAI(apiKey, prompt) {
               { role: 'system', content: SYSTEM_PROMPT },
               { role: 'user', content: prompt },
             ],
-            temperature: 0.3,
-            top_p: 0.9,
+            temperature: 1.0,
+            top_p: 0.95,
             max_tokens: MAX_TOKENS,
+            stream: false,
+            chat_template_kwargs: { enable_thinking: false },
           }),
           signal: AbortSignal.timeout(REQUEST_TIMEOUT),
         });
@@ -366,7 +368,7 @@ footer a{color:var(--accent);text-decoration:none}
   ${CLINIC_LINKS}
 
   <footer>
-    <p>由 <a href="https://open.bigmodel.cn/" target="_blank" rel="noopener noreferrer">Zhipu AI</a> 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
+    <p>由 NVIDIA AI 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
     <p style="margin-top:4px">© ${dateStr.split('-')[0]} 舞蹈治療文獻日報 · <a href="index.html">返回首頁</a></p>
   </footer>
 </div>
@@ -390,9 +392,9 @@ async function main() {
     },
   });
 
-  const apiKey = process.env.ZHIPU_API_KEY;
+  const apiKey = process.env.NVIDIA_API_KEY;
   if (!apiKey) {
-    console.error('[FATAL] ZHIPU_API_KEY not set');
+    console.error('[FATAL] NVIDIA_API_KEY not set');
     process.exit(1);
   }
 
