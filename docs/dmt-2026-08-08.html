@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DMT Research · 舞蹈治療文獻日報 · 2026年8月8日</title>
+<meta name="description" content="2026年8月8日 舞蹈治療/動態治療文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:#fffdf8;--shadow:0 2px 12px rgba(139,79,43,.07)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Noto Sans TC','PingFang TC','Helvetica Neue',Arial,sans-serif;min-height:100vh;overflow-x:hidden;line-height:1.7}
+.container{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+header{text-align:center;margin-bottom:40px;padding:36px 24px 28px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.logo{font-size:52px;margin-bottom:8px}
+h1{font-family:'Crimson Pro','Noto Sans TC',serif;font-size:28px;font-weight:700;color:var(--accent);letter-spacing:.5px;margin-bottom:4px}
+.subtitle{font-size:15px;color:var(--muted);font-weight:400}
+.date-badge{display:inline-block;margin-top:10px;padding:4px 16px;background:var(--accent);color:#fff;border-radius:20px;font-size:13px;font-weight:500}
+.summary-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:36px;box-shadow:var(--shadow)}
+.summary-card h2{font-size:16px;color:var(--accent);margin-bottom:8px;font-weight:600}
+.summary-card p{font-size:15px;color:var(--text);line-height:1.8}
+.section-title{font-size:18px;font-weight:700;color:var(--accent);margin:36px 0 16px;display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';display:inline-block;width:4px;height:20px;background:var(--accent);border-radius:2px}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,79,43,.12)}
+.news-card.featured{border-left:4px solid var(--accent)}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent);color:#fff;border-radius:50%;font-size:13px;font-weight:700}
+.emoji-icon{font-size:22px}
+.utility-high{color:#1a7a3a;font-weight:600;font-size:13px;background:#e8f5e9;padding:2px 10px;border-radius:10px}
+.utility-mid{color:#8c6d1f;font-weight:600;font-size:13px;background:#fff8e1;padding:2px 10px;border-radius:10px}
+.utility-low{color:#999;font-weight:600;font-size:13px;background:#f5f5f5;padding:2px 10px;border-radius:10px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:18px}
+.utility-sm{font-size:12px}
+h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;line-height:1.5}
+.journal-source{font-size:13px;color:var(--muted);margin-bottom:8px}
+.utility-reason{font-size:13px;color:var(--muted);font-style:italic;margin-top:6px}
+.card-footer{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.tag{display:inline-block;padding:2px 10px;background:var(--accent-soft);color:var(--accent);border-radius:10px;font-size:12px;font-weight:500}
+.card-footer a{margin-left:auto;font-size:13px;color:var(--accent);text-decoration:none;font-weight:500}
+.card-footer a:hover{text-decoration:underline}
+.keywords-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.keywords-section h2{font-size:16px;color:var(--accent);margin-bottom:12px}
+.keyword{display:inline-block;padding:4px 14px;margin:3px;border:1px solid var(--line);border-radius:16px;font-size:13px;color:var(--muted);background:var(--bg)}
+.topic-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.topic-section h2{font-size:16px;color:var(--accent);margin-bottom:14px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{min-width:100px;font-size:13px;color:var(--text);text-align:right}
+.topic-bar-bg{flex:1;height:16px;background:var(--bg);border-radius:8px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-soft));border-radius:8px;transition:width .3s}
+.topic-count{min-width:24px;font-size:13px;color:var(--muted);font-weight:600}
+.clinic-banner{margin:40px 0 20px;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;text-align:center}
+.clinic-links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.clinic-link{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:14px;font-weight:500;transition:background .2s,transform .15s}
+.clinic-link:hover{background:#a3613a;transform:translateY(-1px)}
+.coffee-link{background:#ff813f}
+.coffee-link:hover{background:#e0703a}
+.clinic-icon{font-size:18px}
+footer{text-align:center;padding:32px 0 0;border-top:1px solid var(--line);margin-top:40px;color:var(--muted);font-size:13px}
+footer a{color:var(--accent);text-decoration:none}
+.empty-msg{text-align:center;padding:48px 24px;color:var(--muted);font-size:15px}
+@media(max-width:640px){
+  .container{padding:16px 12px 40px}
+  header{padding:24px 16px 20px}
+  h1{font-size:22px}
+  .news-card{padding:16px}
+  .clinic-links{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💃</div>
+    <h1>DMT Research Daily</h1>
+    <p class="subtitle">舞蹈治療 / 動態治療文獻日報 · 每日自動更新</p>
+    <span class="date-badge">📅 2026年8月8日</span>
+  </header>
+
+  <div class="summary-card"><h2>📊 今日趨勢摘要</h2><p>今日文獻聚焦於舞蹈治療的文化適應性與身體活動的神經機制，突顯跨文化實踐與運動神經保護在精神健康與神經退化性疾病中的整合趨勢。</p></div>
+
+  <div class="section-title">🏆 今日精選 TOP 2</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🌍</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>印度舞蹈治療中的文化元素探究：主題分析研究</h3>
+          <p class="journal-source">Journal of dance medicine &amp; science : official publication of the International Association for Dance Medicine &amp; Science · A Thematic Analysis Exploring Cultural Elements of Dance Movement Therapy in India.</p>
+          <p>該研究揭示印度舞蹈治療師融合印度古典舞、民間舞、寶萊塢及瑜伽等文化元素，構建具文化安全性與療癒效果的多模式治療空間。</p>
+          <p class="utility-reason">💡 提供具體文化適應策略，助治療師在多元文化臨床環境中提升舞蹈治療的接受度與療效。</p>
+          <div class="card-footer">
+            <span class="tag">舞蹈治療</span><span class="tag">社會連結</span><span class="tag">社區健康</span><span class="tag">創意藝術治療</span><span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42549926/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>身體活動的心理與神經益處：對精神健康、帕金森氏症與阿茲海默症的影響</h3>
+          <p class="journal-source">Brain structure &amp; function · Psychological and neurological benefits of physical activity: impact on mental health, Parkinson's disease, and Alzheimer's disease.</p>
+          <p>此綜述證實有組織運動（含舞蹈類介入）透過神經 trophic 因子、抗炎與神經迴路重塑機制，改善精神症狀並減緩神經退化性疾病進程。</p>
+          <p class="utility-reason">💡 為舞蹈治療在精神健康與神經退化性疾病中的應用提供強力神經科學依據，支持運動類療法的臨床整合。</p>
+          <div class="card-footer">
+            <span class="tag">憂鬱症</span><span class="tag">帕金森氏症</span><span class="tag">失智症</span><span class="tag">神經科學</span><span class="tag">運動科學</span><span class="tag">體現認知</span><span class="tag">復健醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42550250/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+
+  <div class="section-title">📋 所有文獻（共 4 篇）</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌍</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>印度舞蹈治療中的文化元素探究：主題分析研究</h3>
+          <p class="journal-source">Journal of dance medicine &amp; science : official publication of the International Association for Dance Medicine &amp; Science</p>
+          <p>該研究揭示印度舞蹈治療師融合印度古典舞、民間舞、寶萊塢及瑜伽等文化元素，構建具文化安全性與療癒效果的多模式治療空間。</p>
+          <div class="card-footer">
+            <span class="tag">舞蹈治療</span><span class="tag">社會連結</span><span class="tag">社區健康</span><span class="tag">創意藝術治療</span><span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42549926/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>身體活動的心理與神經益處：對精神健康、帕金森氏症與阿茲海默症的影響</h3>
+          <p class="journal-source">Brain structure &amp; function</p>
+          <p>此綜述證實有組織運動（含舞蹈類介入）透過神經 trophic 因子、抗炎與神經迴路重塑機制，改善精神症狀並減緩神經退化性疾病進程。</p>
+          <div class="card-footer">
+            <span class="tag">憂鬱症</span><span class="tag">帕金森氏症</span><span class="tag">失智症</span><span class="tag">神經科學</span><span class="tag">運動科學</span><span class="tag">體現認知</span><span class="tag">復健醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42550250/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+
+  
+
+  <div class="topic-section"><h2>📈 主題分佈</h2>
+            <div class="topic-row">
+              <span class="topic-name">舞蹈治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">憂鬱症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">帕金森氏症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">失智症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">文化適應</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">運動科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">社會連結</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">創意藝術治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">1</span>
+            </div></div>
+
+  <div class="keywords-section"><h2>🏷️ 關鍵字</h2><span class="keyword">舞蹈治療</span><span class="keyword">文化適應</span><span class="keyword">神經保護</span><span class="keyword">精神健康</span><span class="keyword">帕金森氏症</span><span class="keyword">阿茲海默症</span><span class="keyword">體現認知</span><span class="keyword">運動介入</span></div>
+
+  
+<div class="clinic-banner">
+  <div class="clinic-links">
+    <a href="https://www.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">🏥</span> 李政洋身心診所首頁
+    </a>
+    <a href="https://blog.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">📬</span> 訂閱電子報
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" target="_blank" rel="noopener noreferrer" class="clinic-link coffee-link">
+      <span class="clinic-icon">☕</span> Buy Me a Coffee
+    </a>
+  </div>
+</div>
+
+  <footer>
+    <p>由 NVIDIA AI 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
+    <p style="margin-top:4px">© 2026 舞蹈治療文獻日報 · <a href="index.html">返回首頁</a></p>
+  </footer>
+</div>
+</body>
+</html>
