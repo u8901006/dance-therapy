@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DMT Research · 舞蹈治療文獻日報 · 2026年9月7日</title>
+<meta name="description" content="2026年9月7日 舞蹈治療/動態治療文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:#fffdf8;--shadow:0 2px 12px rgba(139,79,43,.07)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Noto Sans TC','PingFang TC','Helvetica Neue',Arial,sans-serif;min-height:100vh;overflow-x:hidden;line-height:1.7}
+.container{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+header{text-align:center;margin-bottom:40px;padding:36px 24px 28px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.logo{font-size:52px;margin-bottom:8px}
+h1{font-family:'Crimson Pro','Noto Sans TC',serif;font-size:28px;font-weight:700;color:var(--accent);letter-spacing:.5px;margin-bottom:4px}
+.subtitle{font-size:15px;color:var(--muted);font-weight:400}
+.date-badge{display:inline-block;margin-top:10px;padding:4px 16px;background:var(--accent);color:#fff;border-radius:20px;font-size:13px;font-weight:500}
+.summary-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:36px;box-shadow:var(--shadow)}
+.summary-card h2{font-size:16px;color:var(--accent);margin-bottom:8px;font-weight:600}
+.summary-card p{font-size:15px;color:var(--text);line-height:1.8}
+.section-title{font-size:18px;font-weight:700;color:var(--accent);margin:36px 0 16px;display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';display:inline-block;width:4px;height:20px;background:var(--accent);border-radius:2px}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,79,43,.12)}
+.news-card.featured{border-left:4px solid var(--accent)}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent);color:#fff;border-radius:50%;font-size:13px;font-weight:700}
+.emoji-icon{font-size:22px}
+.utility-high{color:#1a7a3a;font-weight:600;font-size:13px;background:#e8f5e9;padding:2px 10px;border-radius:10px}
+.utility-mid{color:#8c6d1f;font-weight:600;font-size:13px;background:#fff8e1;padding:2px 10px;border-radius:10px}
+.utility-low{color:#999;font-weight:600;font-size:13px;background:#f5f5f5;padding:2px 10px;border-radius:10px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:18px}
+.utility-sm{font-size:12px}
+h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;line-height:1.5}
+.journal-source{font-size:13px;color:var(--muted);margin-bottom:8px}
+.utility-reason{font-size:13px;color:var(--muted);font-style:italic;margin-top:6px}
+.card-footer{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.tag{display:inline-block;padding:2px 10px;background:var(--accent-soft);color:var(--accent);border-radius:10px;font-size:12px;font-weight:500}
+.card-footer a{margin-left:auto;font-size:13px;color:var(--accent);text-decoration:none;font-weight:500}
+.card-footer a:hover{text-decoration:underline}
+.keywords-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.keywords-section h2{font-size:16px;color:var(--accent);margin-bottom:12px}
+.keyword{display:inline-block;padding:4px 14px;margin:3px;border:1px solid var(--line);border-radius:16px;font-size:13px;color:var(--muted);background:var(--bg)}
+.topic-section{margin:32px 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.topic-section h2{font-size:16px;color:var(--accent);margin-bottom:14px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{min-width:100px;font-size:13px;color:var(--text);text-align:right}
+.topic-bar-bg{flex:1;height:16px;background:var(--bg);border-radius:8px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-soft));border-radius:8px;transition:width .3s}
+.topic-count{min-width:24px;font-size:13px;color:var(--muted);font-weight:600}
+.clinic-banner{margin:40px 0 20px;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;text-align:center}
+.clinic-links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.clinic-link{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-size:14px;font-weight:500;transition:background .2s,transform .15s}
+.clinic-link:hover{background:#a3613a;transform:translateY(-1px)}
+.coffee-link{background:#ff813f}
+.coffee-link:hover{background:#e0703a}
+.clinic-icon{font-size:18px}
+footer{text-align:center;padding:32px 0 0;border-top:1px solid var(--line);margin-top:40px;color:var(--muted);font-size:13px}
+footer a{color:var(--accent);text-decoration:none}
+.empty-msg{text-align:center;padding:48px 24px;color:var(--muted);font-size:15px}
+@media(max-width:640px){
+  .container{padding:16px 12px 40px}
+  header{padding:24px 16px 20px}
+  h1{font-size:22px}
+  .news-card{padding:16px}
+  .clinic-links{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💃</div>
+    <h1>DMT Research Daily</h1>
+    <p class="subtitle">舞蹈治療 / 動態治療文獻日報 · 每日自動更新</p>
+    <span class="date-badge">📅 2026年9月7日</span>
+  </header>
+
+  <div class="summary-card"><h2>📊 今日趨勢摘要</h2><p>本日文獻聚焦於認知保護與運動介入，尤其強調結合舞蹈式動作的多領域生活方式干預於輕度認知障礙的可行性，反映身心醫學與神經科學整合的發展趨勢。</p></div>
+
+  <div class="section-title">🏆 今日精選 TOP 5</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>南韓SUPERBRAIN-BOOM試驗：透過行為優化組織化運動療法預防輕度認知障礙者認知衰退</h3>
+          <p class="journal-source">Journal of clinical neurology (Seoul, Korea) · SoUth Korean study to PrEvent cognitive impaiRment and protect BRAIN health via Behavioral, Optimized, Organized Movement therapy (SUPERBRAIN-BOOM) in Mild Cognitive Impairment: Protocol for a Multicenter, Randomized Controlled Feasibility Trial.</p>
+          <p>此研究結合舞蹈式運動、營養教育與冥想的行動式多領域介入，針對輕度認知障礙者設計，旨在提升依從性與文化適切性，為痴呆預防提供可擴充之模式。</p>
+          <p class="utility-reason">💡 直接將舞蹈治療元素整合至可實施的預防性干預中，具高臨床轉化潛力，特別適用於老年人群的非藥物認知保護策略。</p>
+          <div class="card-footer">
+            <span class="tag">舞蹈治療</span><span class="tag">失智症</span><span class="tag">神經科學</span><span class="tag">體現認知</span><span class="tag">運動科學</span><span class="tag">老年人</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42683797/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">💬</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>身體心理學視角下嚴重疾病照護中的身份威脅與溝通策略</h3>
+          <p class="journal-source">Journal of palliative medicine · Threatened Identity: Self Psychology Informed Communication for Serious Illness Care.</p>
+          <p>提出以自我心理學為基礎的溝通工具，幫助患者在嚴重疾病中維持自我一致性，減少衝突並強化治療聯盟，特別適用於身體喪失或功能下降的情境。</p>
+          <p class="utility-reason">💡 為身心醫學與安寧緩和領域提供具體、理論基礎溝通框架，可直接應用於舞蹈/動作治療中的身份重建工作。</p>
+          <div class="card-footer">
+            <span class="tag">身體意象</span><span class="tag">安寧緩和</span><span class="tag">身心醫學</span><span class="tag">創意藝術治療</span><span class="tag">老年人</span><span class="tag">癌症照護</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42687570/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🪞</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>精神分裂症患者鏡像與自我臉部處理的改變：系統性文獻回顧</h3>
+          <p class="journal-source">Schizophrenia research · Altered mirroring and self-face processing in schizophrenia: A systematic review.</p>
+          <p>證實精神分裂症患者在自我臉部辨識與鏡像互動中存在顯著障礙，支援鏡像為探索身體自我疏離的實驗平台，暗示動作觀察與身體同步訓練的治療潛力。</p>
+          <p class="utility-reason">💡 雖為基礎研究，但提供重要機制依據，可指導舞蹈治療中利用鏡像與同步動作來改善自我邊界與具身感的設計。</p>
+          <div class="card-footer">
+            <span class="tag">動作觀察</span><span class="tag">身體意象</span><span class="tag">神經科學</span><span class="tag">身心醫學</span><span class="tag">創意藝術治療</span><span class="tag">焦點族群</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42224837/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🌀</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>抗抑鬱藥物於持續性姿勢-知覺性頭暈（PPPD）的療效系統性回顧</h3>
+          <p class="journal-source">Journal of vestibular research : equilibrium &amp; orientation · Evaluating the effect of antidepressants for persistent postural-perceptual dizziness: A systematic review.</p>
+          <p>雖證實抗抑鬱藥物可減輕PPPD相關頭暈與精神症狀，但品質不足，凸顯非藥物介入（如動作與平衡訓練）在功能性神經疾病中的補充角色。</p>
+          <p class="utility-reason">💡 提醒臨床師注意藥物局限性，間接支持舞蹈治療等具體動作介入於平衡與身體感知疾病中的價值，特別當藥物耐受性不佳時。</p>
+          <div class="card-footer">
+            <span class="tag">復健醫學</span><span class="tag">運動科學</span><span class="tag">神經科學</span><span class="tag">身心醫學</span><span class="tag">焦慮症</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42678338/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🔬</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>基於血液轉錄本特徵之多發性硬化症非侵入式偵測研究</h3>
+          <p class="journal-source">Neurobiology of disease · A blood transcriptomic signature anchored to central nervous system pathology enables noninvasive detection of multiple sclerosis.</p>
+          <p>識別出具CNS病理一致性的14基因血液特徵，可非侵入式區分MS患者與對照組，為神經退化性疾病的生物標誌物開發提供新方向。</p>
+          <p class="utility-reason">💡 雖未直接涉及舞蹈，但強調血液與中樞神經雙向溝通的生物學基礎，間接支持身體狀態可反映神經健康的身心醫學概念。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">體現認知</span><span class="tag">身心醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42331233/" target="_blank" rel="noopener noreferrer">閱讀原文 →</a>
+          </div>
+        </div>
+
+  <div class="section-title">📋 所有文獻（共 12 篇）</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>氨基酸代謝在健康與疾病中的角色</h3>
+          <p class="journal-source">MedComm</p>
+          <p>全面檢視胺基酸代謝如何影響多系統生理與病理過程，強調其在神經退化、免疫與代謝疾病中的關鍵作用。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">身心醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42666691/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🛡️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>IL-1家族訊號傳導驅動黏膜防禦以對抗全身性白色念珠菌感染</h3>
+          <p class="journal-source">Nature microbiology</p>
+          <p>揭示IL-1家族在啟動黏膜免疫、限制念珠菌入侵及協調中性細胞反應中的核心角色，尤其在中性細胞減少時具有臨床關鍵性。</p>
+          <div class="card-footer">
+            <span class="tag">身心醫學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42557355/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🤖</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>全自動AI-based數位工作流用於眼窩骨折鏡像複製：多中心驗證</h3>
+          <p class="journal-source">Journal of cranio-maxillo-facial surgery : official publication of the European Association for Cranio-Maxillo-Facial Surgery</p>
+          <p>開發出經驗證的全自動AI工具，用於精準分割與鏡像眼窩結構，顯著提升顱顏重建之效率與一致性，減少人為誤差。</p>
+          <div class="card-footer">
+            <span class="tag">復健醫學</span><span class="tag">運動科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42418924/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👁️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>遺傳易感性之動物轉譯模型：無眼症/小眼症研究於實驗負鼠</h3>
+          <p class="journal-source">Experimental eye research</p>
+          <p>建立負鼠自然發生的非綜合症性小眼症/無眼症模型，顯示X連鎖隱性遺傳與變異表現，為先天性眼部異常提供轉譯研究平台。</p>
+          <div class="card-footer">
+            <span class="tag">兒童青少年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42349624/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💉</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>累積抗原抑制如何降低戈謝病患者克隆漿細胞演進</h3>
+          <p class="journal-source">American journal of hematology</p>
+          <p>證明長期使用GD特效藥（如彊吉STAT）可減少血清抗原LysoGL1，進而降低單克隆類血病風險，支持抗原減量為修飾惡性轉變之策略。</p>
+          <div class="card-footer">
+            <span class="tag">癌症照護</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42309787/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">�</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>紅狐狸青春期前血清抗穆勒氏激素、雌激素與孕激素濃度之測定</h3>
+          <p class="journal-source">Reproductive biology</p>
+          <p>揭示紅狐狸青春期前內分泌變化與陰道細胞學的同步發展，雌激素與陰道上皮角質化顯著隨年齡增加，為動物繁殖生理提供初步數據。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41980470/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Stage IIB/IIC闌尾腺癌是否需輔助化療？</h3>
+          <p class="journal-source">The American surgeon</p>
+          <p>發現輔助化療顯著改善Stage IIB/IIC闌尾腺癌患者的整體生存，尤其當結合充分淋巴結清除時，挑戰現有依賴大腸癌範式的治療觀念。</p>
+          <div class="card-footer">
+            <span class="tag">癌症照護</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41870327/" target="_blank" rel="noopener noreferrer">PubMed →</a>
+          </div>
+        </div>
+
+  
+
+  <div class="topic-section"><h2>📈 主題分佈</h2>
+            <div class="topic-row">
+              <span class="topic-name">失智症</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">舞蹈治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">身體意象</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">體現認知</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">復健醫學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">動作觀察</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">安寧緩和</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div></div>
+
+  <div class="keywords-section"><h2>🏷️ 關鍵字</h2><span class="keyword">舞蹈治療</span><span class="keyword">失智症</span><span class="keyword">身體意象</span><span class="keyword">神經科學</span><span class="keyword">復健醫學</span><span class="keyword">體現認知</span><span class="keyword">動作觀察</span><span class="keyword">安寧緩和</span></div>
+
+  
+<div class="clinic-banner">
+  <div class="clinic-links">
+    <a href="https://www.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">🏥</span> 李政洋身心診所首頁
+    </a>
+    <a href="https://blog.leepsyclinic.com/" target="_blank" rel="noopener noreferrer" class="clinic-link">
+      <span class="clinic-icon">📬</span> 訂閱電子報
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" target="_blank" rel="noopener noreferrer" class="clinic-link coffee-link">
+      <span class="clinic-icon">☕</span> Buy Me a Coffee
+    </a>
+  </div>
+</div>
+
+  <footer>
+    <p>由 NVIDIA AI 分析生成 · 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a></p>
+    <p style="margin-top:4px">© 2026 舞蹈治療文獻日報 · <a href="index.html">返回首頁</a></p>
+  </footer>
+</div>
+</body>
+</html>
